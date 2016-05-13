@@ -141,6 +141,7 @@ function gameSquarePressed(spaceNo, number) {
 
 function submitAnswer() {
     var userInput = document.getElementById("answerEnter").value;
+	document.getElementById("answerEnter").value = "";
     if (userInput == currentAnswer) {
         if (currentState == player1turn) {
             player1Score = player1Score + currentPointsForGrabs;
