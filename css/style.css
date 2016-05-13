@@ -1,0 +1,89 @@
+#menuLogo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.instructions {
+  display: none;
+  margin-left: 33%;
+  margin-right: 33%;
+  border: 3px solid #4CAF50;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-bottom: 4px;
+}
+
+#instructBtn, #playBtn {
+  margin-top: 20px;
+  background-color: white;
+  color: black;
+  border: 2px solid #4CAF50;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#backBtn {
+  margin-top: 10px;
+  background-color: white;
+  color: black;
+  border: 2px solid #4CAF50;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 15px;
+}
+
+.gameSquare {
+  margin-top: 0px;
+  margin-bottom: 4px;
+  background-color: white;
+  color: black;
+  border: 2px solid #4CAF50;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+#instructTitle {
+  margin-top: 10px;
+  margin-bottom: 12px;
+}
+
+#playBtn {
+  margin-left: 46%;
+  margin-right: 54%;
+}
+
+#instructBtn {
+  margin-left: 42%;
+  margin-right: 58%;
+}
+
+.gameSquare:hover, #backBtn:hover, #instructBtn:hover, #playBtn:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.gamePage {
+  border: 3px solid black;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  display: none;
+  margin-left: 35%;
+  margin-right: 35%
+}

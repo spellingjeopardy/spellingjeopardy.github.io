@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Spelling Jeopardy</title>
+    <script type="text/javascript" src="scripts/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+</head>
+<body onload="checkState">
+    <div class="menu">
+        <img class="menuItem" id="menuLogo" src="./graphics/spellingJeopardy.png" alt="Spelling: The Video Game">
+        <a class="menuItem" href="javascript:playGame()" id="playBtn"><strong>PLAY</strong></a>
+        <a class="menuItem" href="javascript:instructions()" id="instructBtn"><strong>INSTRUCTIONS</strong></a>
+    </div>
+    <div class="instructions">
+        <a href="javascript:backMenu()" id="backBtn"><strong>&ltBACK</strong></a>
+        <h1 id="instructTitle">Instructions:</h1>
+        <p>This game is played exactly like jeopardy. Player 1's buzz key is the left arrow, and Player 2's is the right arrow. First player to 1000 points wins.</p>
+    </div>
+    <div class="gamePage" id="gameID">
+        <p id="player1score"></p>
+        <p id="player2score"></p>
+        <p id="turn">Waiting...</p>
+        <div class="gameSpace1">
+            <a class="gameSquare" href="javascript:gameSquarePressed(1, 1)" id="1b1"><strong>100</strong></a>
+            <a class="gameSquare" href="javascript:gameSquarePressed(1, 2)" id="1b2"><strong>100</strong></a>
+            <a class="gameSquare" href="javascript:gameSquarePressed(1, 3)" id="1b3"><strong>100</strong></a>
+            <a class="gameSquare" href="javascript:gameSquarePressed(1, 4)" id="1b4"><strong>100</strong></a>
+        </div>
+        <div class="gameSpace2">
+            <a class="gameSquare" href="javascript:gameSquarePressed(2, 1)" id="2b1"><strong>200</strong></a>
+            <a class="gameSquare" href="javascript:gameSquarePressed(2, 2)" id="2b2"><strong>200</strong></a>
+            <a class="gameSquare" href="javascript:gameSquarePressed(2, 3)" id="2b3"><strong>200</strong></a>
+            <a class="gameSquare" href="javascript:gameSquarePressed(2, 4)" id="2b4"><strong>200</strong></a>
+        </div>
+        <div class="gameSpace3">
+            <a class="gameSquare" href="javascript:gameSquarePressed(3, 1)" id="3b1"><strong>300</strong></a>
+            <a class="gameSquare" href="javascript:gameSquarePressed(3, 2)" id="3b2"><strong>300</strong></a>
+            <a class="gameSquare" href="javascript:gameSquarePressed(3, 3)" id="3b3"><strong>300</strong></a>
+            <a class="gameSquare" href="javascript:gameSquarePressed(3, 4)" id="3b4"><strong>300</strong></a>
+        </div>
+        <div class="gameSpace4">
+            <a class="gameSquare" href="javascript:gameSquarePressed(4, 1)" id="4b1"><strong>400</strong></a>
+            <a class="gameSquare" href="javascript:gameSquarePressed(4, 2)" id="4b2"><strong>400</strong></a>
+            <a class="gameSquare" href="javascript:gameSquarePressed(4, 3)" id="4b3"><strong>400</strong></a>
+            <a class="gameSquare" href="javascript:gameSquarePressed(4, 4)" id="4b4"><strong>400</strong></a>
+        </div>
+        <div class="gameSpace5">
+            <a class="gameSquare" href="javascript:gameSquarePressed(5, 1)" id="5b1"><strong>500</strong></a>
+            <a class="gameSquare" href="javascript:gameSquarePressed(5, 2)" id="5b2"><strong>500</strong></a>
+            <a class="gameSquare" href="javascript:gameSquarePressed(5, 3)" id="5b3"><strong>500</strong></a>
+            <a class="gameSquare" href="javascript:gameSquarePressed(5, 4)" id="5b4"><strong>500</strong></a>
+        </div>
+        <p id="question">Question:</p>
+        <div class="enterAnswers">
+            <input type="text" id="answerEnter">
+            <button id="answerSubmit" onclick="submitAnswer()">Submit</button>
+        </div>
+    </div>
+</body>
+</html>
